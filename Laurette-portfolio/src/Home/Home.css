@@ -1,9 +1,53 @@
-.backImg
+.backImg {
+  background-image: url("C:\Users\HP\Desktop\Git\Laurette-portfolio\Laurette-portfolio\src\assets\aina.jpg") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: soft-light;
+  background-position: right center;
+}
+.longText
 {
-    background-image: url('C:\Users\HP\Desktop\Git\Laurette-portfolio\Laurette-portfolio\src\assets\aina.jpg')!important;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode:soft-light;
-   
+font-size: 300px !important;
     
+}
+.bgZinc
+{
+    background-color: black;
+    height: 200rem;
+}
+@media only screen and (max-width: 800px) {
+  .backImg {
+    background-image: url("C:\Users\HP\Desktop\Git\Laurette-portfolio\Laurette-portfolio\src\assets\aina.jpg") !important;
+    background-repeat: no-repeat !important;
+    background-position: left !important;
+  }
+  .longText{
+      font-size: 100px;
+  }
+  .theBtn {
+      width: 300px !important;
+  }
+}
+@media screen and  (max-width: 1050px){
+    .longText{
+        font-size: 100px !important;
+        
+    }
+    .theBtn
+    {
+        height: 80px !important;
+    }
+    
+}
+@media screen and  (max-width: 400px){
+    .longText{
+        font-size: 50px !important;
+        
+        
+    }
+    .theBtn
+    {
+        width: 200px !important;
+        height: 50px !important;
+    }
 }
