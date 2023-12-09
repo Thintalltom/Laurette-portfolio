@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 import { HiChevronDown, HiChevronUp } from "react-icons/hi";
-
+import {Link as LinkScroll} from 'react-scroll'
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const handleClick = () => {
@@ -17,9 +17,12 @@ const Navbar = () => {
         <div className="flex  h-[40px] justify-between p-4">
           <p className="font-extralight text-4xl">eth.Aina</p>
           <div className="flex flex-row gap-[20px]">
-            <p className="font-thin cursor-pointer hover:border-b-2  h-[35px] p-[5px]">
+           <LinkScroll to='about' smooth={true} duration={400}>
+           <p className="font-thin cursor-pointer hover:border-b-2  h-[35px] p-[5px]">
               ABOUT
             </p>
+           </LinkScroll>
+            
             <div className="flex flex-col">
               <div  onClick={handleOpen} className=" flex gap-[5px] cursor-pointer font-thin cursor-pointer hover:border-b-2  h-[35px] p-[5px]">
                 WRITING <span>   {dropdown ? <HiChevronUp /> : <HiChevronDown />}</span>
@@ -36,6 +39,10 @@ const Navbar = () => {
 
             <p className="font-thin cursor-pointer hover:border-b-2  h-[35px] p-[5px]">
               GALLERY
+            </p>
+
+            <p className="font-thin cursor-pointer hover:border-b-2  h-[35px] p-[5px]">
+              CREATIVE HUB
             </p>
           </div>
         </div>
@@ -75,6 +82,10 @@ const Navbar = () => {
              </div>
             </div>
           <p className="font-thin cursor-pointer hover:border-b-2 ">GALLERY</p>
+        
+          <p className="font-thin cursor-pointer hover:border-b-2">
+              CREATIVE HUB
+            </p>
         </div>
       </div>
     </div>

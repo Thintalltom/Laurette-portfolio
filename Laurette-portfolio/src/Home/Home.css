@@ -13,7 +13,7 @@ font-size: 300px !important;
 .bgZinc
 {
     background-color: black;
-    height: 200rem;
+    height: 300rem;
 }
 @media only screen and (max-width: 800px) {
   .backImg {
@@ -27,6 +27,11 @@ font-size: 300px !important;
   .theBtn {
       width: 300px !important;
   }
+  .bgZinc
+{
+    background-color: black;
+    height: 400rem;
+}
 }
 @media screen and  (max-width: 1050px){
     .longText{
@@ -38,8 +43,13 @@ font-size: 300px !important;
         height: 80px !important;
     }
     
+    .bgZinc
+    {
+        background-color: black;
+        height: 350rem;
+    }
 }
-@media screen and  (max-width: 400px){
+@media screen and  (max-width: 500px){
     .longText{
         font-size: 50px !important;
         
@@ -50,4 +60,10 @@ font-size: 300px !important;
         width: 200px !important;
         height: 50px !important;
     }
+    .bgZinc
+    {
+        background-color: black;
+        height: 400rem;
+    }
 }
+

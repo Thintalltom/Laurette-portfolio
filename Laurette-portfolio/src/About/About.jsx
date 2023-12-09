@@ -2,9 +2,9 @@ import React from "react";
 
 const About = () => {
   return (
-    <div>
+    <div name='about'>
       <div className="flex lg:flex-row sm:flex-col xs:flex-col  p-4 justify-around gap-[20px] ">
-        <div className="font-extralight lg:text-7xl xs:text-5xl text-zinc-400">
+        <div className="font-extralight lg:text-7xl xs:text-5xl text-zinc-800">
           <p>eth.aina</p>
           <p>Bio</p>
         </div>

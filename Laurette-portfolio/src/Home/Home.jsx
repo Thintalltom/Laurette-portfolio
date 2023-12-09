@@ -5,6 +5,7 @@ import About from "../About/About";
 import Works from "../Works/Works";
 import Services from "../Services/Services";
 import Contact from "../Contact/Contact";
+import Experience from "../Experience/Experience";
 const Home = () => {
   return (
     <div className="">
@@ -25,6 +26,7 @@ const Home = () => {
         </div>
         <div className="p-4 mt-[-60px] h-[50rem]">
           <About />
+          <Experience />
           <Works />
           <Services />
           <Contact />
