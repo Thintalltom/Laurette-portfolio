@@ -1,5 +1,5 @@
 .backImg {
-  background-image: url("C:\Users\HP\Desktop\Git\Laurette-portfolio\Laurette-portfolio\src\assets\aina.jpg") !important;
+  background-image: url("Laurette-portfolio\Laurette-portfolio\src\assets\aina.jpg") !important;
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: soft-light;
@@ -17,7 +17,7 @@ font-size: 300px !important;
 }
 @media only screen and (max-width: 800px) {
   .backImg {
-    background-image: url("C:\Users\HP\Desktop\Git\Laurette-portfolio\Laurette-portfolio\src\assets\aina.jpg") !important;
+    background-image: url("Laurette-portfolio\Laurette-portfolio\src\assets\aina.jpg") !important;
     background-repeat: no-repeat !important;
     background-position: left !important;
   }
