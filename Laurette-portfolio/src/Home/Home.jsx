@@ -25,7 +25,7 @@ const Home = () => {
               AINA
             </p>
             <button className=" hover:border-0 hover:bg-zinc-950 font-extralight border-[0.2px] lg:w-[500px] lg:h-[300px] sm:w-[400px] sm:h-[100px] md:h-[100px]  lg:text-5xl p-4 theBtn">
-              HIRE ME
+            <a href="mailto:ethaina101@gmail.com">HIRE ME</a>
             </button>
           
           </div>
