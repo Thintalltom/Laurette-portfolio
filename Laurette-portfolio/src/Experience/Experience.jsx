@@ -5,7 +5,7 @@ const Experience = () => {
 
     const info = [
         {
-            year:'january 2018 - july 2019',
+            year:'January 2018 - july 2019',
             company: 'Emirate Publisher',
             post: 'Creative Writer'
         },
