@@ -3,14 +3,7 @@ import React from "react";
 const About = () => {
   return (
     <div name='about'>
-      <div className="flex lg:flex-row sm:flex-col xs:flex-col  p-4 justify-around gap-[20px] ">
-        <div className="font-extralight lg:text-7xl xs:text-5xl text-zinc-800">
-          <p>eth.aina</p>
-          <p>Bio</p>
-        </div>
-        <div className="text-center  flex justify-center items-center">
-          ____________________
-        </div>
+      <div className=" p-4 ">
         <div className="font-extralight text-zinc-300  gap-4">
           <p className="indent-8">
             Aina Temitope Emmanuel, affectionately known as Eth.Aina, is a

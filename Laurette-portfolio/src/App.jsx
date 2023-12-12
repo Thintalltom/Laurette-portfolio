@@ -3,6 +3,11 @@ import Navbar from "./Navbar/Navbar";
 import Home from "./Home/Home";
 import PropagateLoader from "react-spinners/PropagateLoader";
 import { Routes, Route } from "react-router-dom";
+import Essay from "./Route/Essay";
+import Fiction from "./Route/Fiction";
+import Opportunity from "./Route/Opportunity";
+import Nonfiction from "./Route/Nonfiction";
+import Poem from "./Route/Poem";
 import "./App.css";
 
 function App() {
@@ -33,7 +38,11 @@ function App() {
             <Navbar />
             <Routes>
               <Route path="/" element={<Home />} />
-            
+              <Route path="/essay" element={<Essay />} />
+              <Route path="/fiction" element={<Fiction />} />
+              <Route path="/nonfiction" element={<Nonfiction />} />
+              <Route path="/opportunity" element={<Opportunity />} />
+              <Route path="/poem" element={<Poem />} />
             </Routes>
           </div>
         )}
