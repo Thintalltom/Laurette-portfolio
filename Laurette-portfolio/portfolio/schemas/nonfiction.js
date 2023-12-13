@@ -29,7 +29,7 @@ export default defineType({
           defineField({
             name: 'author',
             title: 'Author',
-            type: 'text',
+            type: 'string',
           })
     ]
 })
