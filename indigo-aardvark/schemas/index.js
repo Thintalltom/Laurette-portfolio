@@ -2,5 +2,12 @@ import blockContent from './blockContent'
 import category from './category'
 import post from './post'
 import author from './author'
+import creator from './creator'
+import fiction from './fiction'
+import nonfiction from './nonfiction'
+import essay from './essay'
+import opportunities from './opportunities'
+import poem from './poem'
 
-export const schemaTypes = [post, author, category, blockContent]
+
+export const schemaTypes = [creator, nonfiction, fiction, poem, essay, opportunities,]

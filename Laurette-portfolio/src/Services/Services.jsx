@@ -2,7 +2,7 @@ import React from 'react'
 
 const Services = () => {
   return (
-    <div className='mt-[20rem]'>
+    <div className='mt-[20rem]' name='service'>
         <p className='text-center sm:text-6xl xs:text-6xl lg:text-9xl text-zinc-800 font-light'> SERVICES</p>
         <p className='text-center text-zinc-400 mt-4'>I offer the following services : </p>
         <div className=' mt-[30px] cursor-pointer md:flex-col sm:flex-col xs:flex-col lg:flex-row xxl:flex-row flex justify-center items-center gap-[50px] mt-[20px]'>
