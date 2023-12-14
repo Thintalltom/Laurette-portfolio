@@ -22,6 +22,23 @@ export default defineType({
             type: 'text',
           }),
           defineField({
+            name: 'image',
+            title: 'Image',
+            type: 'image',
+            options: {
+              hotspot: true,
+            },
+          }),
+         defineField({
+            name: 'file',
+            type: 'file',
+            title: 'File',
+            options: {
+              storeOriginalFilename: false, // Set to true if you want to store the original filename.
+            }
+            
+          }),
+          defineField({
             name: 'publishedAt',
             title: 'Published At',
             type: 'datetime',
