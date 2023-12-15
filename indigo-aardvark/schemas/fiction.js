@@ -35,6 +35,7 @@ export default defineType({
             title: 'File',
             options: {
               storeOriginalFilename: false, // Set to true if you want to store the original filename.
+              showFileKind: true,
             }
           }),
           defineField({
