@@ -8,10 +8,16 @@ const Navbar = () => {
   const handleClick = () => {
     setOpen(!open);
   };
+  
+  const handleItem = () => {
+    setOpen(true);
+  };
+
   const [dropdown, setDropdown] = useState(false);
   const handleOpen = () => {
     setDropdown(!dropdown);
   };
+
   return (
     <div>
       <div className="bg-zinc-950 lg:block xl:block xxl:block  text-white h-[70px] xs:hidden sm:hidden">
@@ -101,7 +107,7 @@ const Navbar = () => {
               : "hidden"
           }
         >
-          <p className="font-thin cursor-pointer hover:border-b-2  ">ABOUT</p>
+          <p onClick={handleItem} className="font-thin cursor-pointer hover:border-b-2  ">ABOUT</p>
           <div className="flex flex-col">
             <div
               onClick={handleOpen}
@@ -120,33 +126,33 @@ const Navbar = () => {
             >
               <Link to="/poem">
                 {" "}
-                <p className="cursor-pointer hover:bg-zinc-200 w-[245px] p-[5px] ">
+                <p onClick={handleItem} className="cursor-pointer hover:bg-zinc-200 w-[245px] p-[5px] ">
                   Poetry
                 </p>{" "}
               </Link>
-              <Link to="/ficton">
+              <Link to="/fiction">
                 {" "}
-                <p className="cursor-pointer hover:bg-zinc-200 w-[245px] p-[5px] ">
+                <p onClick={handleItem} className="cursor-pointer hover:bg-zinc-200 w-[245px] p-[5px] ">
                   Fiction
                 </p>{" "}
               </Link>
               <Link to="/nonfiction">
                 {" "}
-                <p className="cursor-pointer hover:bg-zinc-200 w-[245px] p-[5px]">
+                <p onClick={handleItem} className="cursor-pointer hover:bg-zinc-200 w-[245px] p-[5px]">
                   Non-fiction
                 </p>{" "}
               </Link>
               <Link to="/essay">
                 {" "}
-                <p className="cursor-pointer hover:bg-zinc-200 w-[245px] p-[5px]">
+                <p onClick={handleItem} className="cursor-pointer hover:bg-zinc-200 w-[245px] p-[5px]">
                   Essay
                 </p>{" "}
               </Link>
             </div>
           </div>
-          <p className="font-thin cursor-pointer hover:border-b-2 ">GALLERY</p>
+          <p onClick={handleItem} className="font-thin cursor-pointer hover:border-b-2 ">GALLERY</p>
 
-          <p className="font-thin cursor-pointer hover:border-b-2">
+          <p onClick={handleItem} className="font-thin cursor-pointer hover:border-b-2">
             CREATIVE HUB
           </p>
         </div>
