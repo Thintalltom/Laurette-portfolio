@@ -48,25 +48,25 @@ const Navbar = () => {
               >
                 <Link to="/poem">
                   {" "}
-                  <p className="cursor-pointer hover:bg-zinc-200 w-[100px] p-[5px] ">
+                  <p onClick={handleItem} className="cursor-pointer hover:bg-zinc-200 w-[100px] p-[5px] ">
                     Poetry
                   </p>{" "}
                 </Link>
                 <Link to="/fiction">
                   {" "}
-                  <p className="cursor-pointer hover:bg-zinc-200 w-[100px] p-[5px] ">
+                  <p onClick={handleItem} className="cursor-pointer hover:bg-zinc-200 w-[100px] p-[5px] ">
                     Fiction
                   </p>{" "}
                 </Link>
                 <Link to="/nonfiction">
                   {" "}
-                  <p className="cursor-pointer hover:bg-zinc-200 w-[100px] p-[5px]">
+                  <p onClick={handleItem} className="cursor-pointer hover:bg-zinc-200 w-[100px] p-[5px]">
                     Non-fiction
                   </p>{" "}
                 </Link>
                 <Link to="/essay">
                   {" "}
-                  <p className="cursor-pointer hover:bg-zinc-200 w-[100px] p-[5px]">
+                  <p onClick={handleItem} className="cursor-pointer hover:bg-zinc-200 w-[100px] p-[5px]">
                     Essay
                   </p>
                 </Link>

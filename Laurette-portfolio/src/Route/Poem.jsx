@@ -3,10 +3,13 @@ import sanityClient from '../client'
 
 const Poem = () => {
   const [poem, setPoem] = useState(null)
- 
+ const [loading, setLoading] = useState(true)
 useEffect(() => {
  
-   sanityClient.fetch(`*[_type == 'poem'] {body, Description, publishedAt, name, author}`).then((data) => setPoem(data)).catch(console.error)
+   sanityClient.fetch(`*[_type == 'poem'] {body, Description, publishedAt, name, author}`) .then((data) => {
+    setPoem(data);
+    setLoading(false); // Set loading to false once data is fetched
+  }).catch(console.error)
   },[]) 
 
  
@@ -16,9 +19,9 @@ useEffect(() => {
   return (
     <div>
       <div>
-        <p className='text-center p-4 font-extrabold'>Welcome to my poem world</p>
-       
-        {poem && poem.map((poem, index) => (
+      {loading && <div className='flex justify-center items-center h-[100vh]'> <p>Loading...</p> </div>}
+      {!loading &&
+        poem && poem.map((poem, index) => (
         <div key={poem.author} className='gap-4 p-4'>
           <p className='font-bold'> Title:{poem.name}</p>
           <p className='font-bold'> Author: {poem.author}</p>
