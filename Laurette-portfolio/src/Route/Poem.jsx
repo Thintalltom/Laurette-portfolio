@@ -14,7 +14,10 @@ useEffect(() => {
 
  
 
- 
+  const formatDate = (dateString) => {
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    return new Date(dateString).toLocaleDateString(undefined, options);
+  };
   
   return (
     <div>
@@ -27,7 +30,7 @@ useEffect(() => {
           <p className='font-bold'> Author: {poem.author}</p>
           <p className='font-bold'>Description: {poem.Description}</p>
           <p>{poem.body}</p>
-          <p className='font-bold '> Date of publication: {poem.publishedAt}</p>
+          <p className='font-bold '>  Date of publication: {formatDate(poem.publishedAt)}</p>
         </div>
       ))} 
       </div>
