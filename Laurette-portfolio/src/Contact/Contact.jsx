@@ -61,7 +61,7 @@ const Contact = () => {
             name="message"
             placeholder="Enter Email"
           />
-          <button  disabled={loading || !isGmailAddress(form.current.message.value)} className="bg-zinc-950 text-white w-[150px] p-[10px] rounded-sm">
+          <button  className="bg-zinc-950 text-white w-[150px] p-[10px] rounded-sm">
           {loading ? "Loading 🤗" : "Subscribe"}
           </button>
     
