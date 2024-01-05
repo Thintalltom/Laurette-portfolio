@@ -10,10 +10,12 @@
 font-size: 300px !important;
     
 }
+
 .bgZinc
 {
     background-color: black;
-    height: 300rem;
+    height:max-content;
+
 }
 @media only screen and (max-width: 800px) {
   .backImg {

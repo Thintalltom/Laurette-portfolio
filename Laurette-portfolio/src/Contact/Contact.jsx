@@ -49,7 +49,7 @@ const Contact = () => {
 
   
   return (
-    <div className="mt-[15rem] ">
+    <div className="mt-[15rem]  ">
       <p className="text-center">Subscribe for newsletter </p>
      
       <div className="bg-zinc-450 p-4 flex-col gap-[50px]   flex items-center justify-center ">
