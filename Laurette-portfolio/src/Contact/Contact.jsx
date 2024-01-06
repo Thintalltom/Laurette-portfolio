@@ -49,7 +49,10 @@ const Contact = () => {
 
   
   return (
-    <div className="mt-[15rem]  ">
+    <div className="mt-[3rem] p-[20px]  ">
+
+       
+
       <p className="text-center">Subscribe for newsletter </p>
      
       <div className="bg-zinc-450 p-4 flex-col gap-[50px]   flex items-center justify-center ">
@@ -68,11 +71,7 @@ const Contact = () => {
           </form>
          
         </div>
-        {user != null ? ( <div className="text-white  p-[20px]">You have successfully subscribed 😊 </div>) : (<p></p>)}
-
-        <button className=" p-[20px] w-[200px] bg-zinc-950">
-          <a href="mailto:ethaina101@gmail.com">Hire Me</a>
-        </button>
+        {user != null ? ( <div className="text-white  p-[20px]">Thank you for subscribing 😊 </div>) : (<p></p>)}
       </div>
       <p className="text-center mt-[20px] text-zinc-400 font-light">
         Connect with me on <a>Amazon.com</a>

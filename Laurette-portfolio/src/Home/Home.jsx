@@ -19,12 +19,8 @@ const Home = () => {
             animate={{x: 0}}
             transition= {{duration: 2}}
              className="lg:text-9xl longText xs:text-7xl md:text-lg sm:text-7xl md:text-3xl  font-extralight">
-              eth.
+              eth.aina
             </motion.p>
-            <p className="longText font-extralight sm:indent-8 lg:indent-72">
-              {" "}
-              aina
-            </p>
           </div>
         </div>
         <div className=" mt-[-60px]">

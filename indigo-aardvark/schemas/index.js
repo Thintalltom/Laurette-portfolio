@@ -8,6 +8,7 @@ import nonfiction from './nonfiction'
 import essay from './essay'
 import opportunities from './opportunities'
 import poem from './poem'
+import drama from './drama'
 
-
-export const schemaTypes = [creator, nonfiction, fiction, poem, essay, opportunities,]
+// the schema will be added here so it can be displayed 
+export const schemaTypes = [creator, nonfiction, fiction, poem, essay, opportunities,drama]

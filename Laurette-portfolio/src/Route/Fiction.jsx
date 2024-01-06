@@ -20,7 +20,7 @@ const Fiction = () => {
   return (
     <div>
       {loading && <div className='flex justify-center items-center h-[100vh]'> <p>Loading...</p> </div>}
-      <div className='flex xs:justify-center  xs:items-center  lg:flex-row gap-[20px] sm:flex-col xs:flex-col  xxl:flex-row'>
+      <div className='flex xs:justify-center  xs:items-center  lg:flex-row gap-[20px] sm:flex-col xs:flex-col   xxl:flex-row mt-[50px]'>
       {!loading &&
         fiction &&
         fiction.map((fiction, index) => (
