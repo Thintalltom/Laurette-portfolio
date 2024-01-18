@@ -18,9 +18,13 @@ const Home = () => {
             initial={{x: -100}}
             animate={{x: 0}}
             transition= {{duration: 2}}
-             className="lg:text-9xl longText xs:text-7xl md:text-lg sm:text-7xl md:text-3xl  font-extralight">
+             className="lg:text-9xl longText xs:text-[50px] xs:font-bold md:text-lg sm:text-7xl md:text-3xl  lg:font-extralight">
               eth.aina
             </motion.p>
+
+            <button className=" p-[20px] mt-[80px] w-[300px] text-[#fff] mx-auto bg-[#000] shadow">
+          <a href="mailto:ethaina101@gmail.com">Hire Me</a>
+        </button>
           </div>
         </div>
         <div className=" mt-[-60px]">

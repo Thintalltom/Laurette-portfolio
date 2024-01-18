@@ -3,6 +3,7 @@ import { FiMenu, FiX } from "react-icons/fi";
 import { HiChevronDown, HiChevronUp } from "react-icons/hi";
 import { Link as LinkScroll } from "react-scroll";
 import { Link } from "react-router-dom";
+import './Navbar.css'
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const handleClick = () => {
@@ -20,7 +21,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="bg-zinc-950 lg:block xl:block xxl:block  text-white h-[70px] xs:hidden sm:hidden">
+      <div className="bgZinc lg:block xl:block xxl:block  text-white h-[70px] xs:hidden sm:hidden">
         <div className="flex  h-[40px] justify-between p-4">
      <Link to='/'>     <p className="font-extralight text-4xl">eth.Aina</p> </Link>
           <div className="flex flex-row gap-[20px]">
@@ -103,7 +104,7 @@ const Navbar = () => {
         <div
           className={
             !open
-              ? "flex flex-col bg-zinc-950 text-white p-4 gap-[20px]"
+              ? "flex flex-col bgZinc text-white p-4 gap-[20px]"
               : "hidden"
           }
         >
