@@ -59,14 +59,14 @@ const Contact = () => {
         <div className="border-[0.1px]   p-4 flex justify-center items-center flex-col ">
       
           <form ref={form} onSubmit={sendEmail} className='flex justify-center items-center xs:flex-col gap-[10px] lg:flex-row xxl:flex-row md:flex-row'>
-         {user == '' ? <p>Input your email</p> : '' }
+         
           <input
             type="email"
             className=" text-white bg-transparent border-[0.1px]  lg:w-[300px] xs:w-[250px]  p-[5px] rounded-sm"
             name="message"
             placeholder="Enter Email"
           />
-          <button  className="bg-zinc-950 text-white w-[150px] p-[10px] rounded-sm">
+          <button  className="bg-white text-zinc-950 w-[150px] p-[5px] rounded-sm">
           {loading ? "Loading 🤗" : "Subscribe"}
           </button>
     

@@ -25,12 +25,12 @@ useEffect(() => {
       {loading && <div className='flex justify-center items-center h-[100vh]'> <p>Loading...</p> </div>}
       {!loading &&
         poem && poem.map((poem, index) => (
-        <div key={poem.author} className='gap-4 p-4'>
-          <p className='font-bold'> Title:{poem.name}</p>
-          <p className='font-bold'> Author: {poem.author}</p>
-          <p className='font-bold'>Description: {poem.Description}</p>
-          <p>{poem.body}</p>
-          <p className='font-bold '>  Date of publication: {formatDate(poem.publishedAt)}</p>
+        <div key={index} className='gap-4 p-4 text-white'>
+          <p className='font-light'> Title: {poem.name}</p>
+          <p className='font-light'> Author: {poem.author}</p>
+          <p className='font-light'>Description: {poem.Description}</p>
+          <p className='font-light leading-loose text-sm '>{poem.body}</p>
+          <p className='font-light leading-loose text-xs '>  Date of publication: {formatDate(poem.publishedAt)}</p>
         </div>
       ))} 
       </div>

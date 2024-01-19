@@ -10,7 +10,7 @@ import Experience from "../Experience/Experience";
 
 const Home = () => {
   return (
-    <div className="bgZinc">
+    <div className="bgZinc ">
       <div className=" text-white">
         <div className=" p-[50px]   backImg gap-[5px] bg-zinc-950 flex text-white xs:h-[40rem] 2xl:h-[70rem] xl:h-[70rem] lg:h-[60rem] sm:h-[30rem] ">
           <div className="   lg:w-[80rem] md:w-[60rem] sm:w-[80rem]  mt-[60px] sm:h-[300px] md:h-[400px] lg:h-[700px]  flex-col flex justify-center items-center">
@@ -21,10 +21,11 @@ const Home = () => {
              className="lg:text-9xl longText xs:text-[50px] xs:font-bold md:text-lg sm:text-7xl md:text-3xl  lg:font-extralight">
               eth.aina
             </motion.p>
-
-            <button className=" p-[20px] mt-[80px] w-[300px] text-[#fff] mx-auto bg-[#000] shadow">
-          <a href="mailto:ethaina101@gmail.com">Hire Me</a>
+            <a href="mailto:ethaina101@gmail.com">
+            <button className=" p-[20px] mt-[80px] w-[300px] text-zinc-950 text-[20px] mx-auto bg-white shadow">
+         Hire Me
         </button>
+        </a>
           </div>
         </div>
         <div className=" mt-[-60px]">
