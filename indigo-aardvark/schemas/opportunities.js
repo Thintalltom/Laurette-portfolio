@@ -16,6 +16,11 @@ export default defineType({
             title: 'publicationurl',
             type: 'url',
           }),
+          defineField({
+            name: 'Publisher',
+            title: 'publisher',
+            type: 'string',
+          }),
         
     ]
 })
