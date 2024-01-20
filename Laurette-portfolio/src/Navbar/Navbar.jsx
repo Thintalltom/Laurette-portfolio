@@ -100,10 +100,12 @@ const Navbar = () => {
                 WORKS
               </p>{" "}
             </LinkScroll>
-
+            <Link to='opportunity'>
             <p className="font-thin cursor-pointer hover:border-b-2  h-[35px] p-[5px]">
               OPPORTUNITIES
             </p>
+            </Link>
+            
               <Link to='publication'>
               <p className="font-thin cursor-pointer hover:border-b-2  h-[35px] p-[5px]">
               PUBLICATIONS
@@ -206,17 +208,19 @@ const Navbar = () => {
             </div>
           </div>
           <Link to='publication'>
-              <p onClick={handleItem} className="font-thin cursor-pointer hover:border-b-2  h-[35px] p-[5px]">
+              <p onClick={handleItem} className="font-thin cursor-pointer hover:border-b-2  h-[35px]">
               PUBLICATIONS
             </p>
               </Link>
-
-          <p
+            <Link to='opportunity'>
+            <p
             onClick={handleItem}
             className="font-thin cursor-pointer hover:border-b-2"
           >
             OPPORTUNTIES
           </p>
+            </Link>
+         
         </div>
       </div>
     </div>

@@ -53,7 +53,7 @@ const Contact = () => {
 
        
 
-      <p className="text-center">Subscribe for newsletter </p>
+      <p className="text-center font-light">Subscribe for newsletter </p>
      
       <div className="bg-zinc-450 p-4 flex-col gap-[50px]   flex items-center justify-center ">
         <div className="border-[0.1px]   p-4 flex justify-center items-center flex-col ">
@@ -66,7 +66,7 @@ const Contact = () => {
             name="message"
             placeholder="Enter Email"
           />
-          <button  className="bg-white text-zinc-950 w-[150px] p-[5px] rounded-sm">
+          <button  className="bg-white text-zinc-950 w-[100px] p-[5px] rounded-sm font-light ">
           {loading ? "Loading 🤗" : "Subscribe"}
           </button>
     
