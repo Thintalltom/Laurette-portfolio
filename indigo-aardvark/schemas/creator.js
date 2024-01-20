@@ -2,9 +2,9 @@
 import {defineField, defineType} from 'sanity'
 
 export default defineType({
-    name: 'creator',
+    name: 'opportunity',
     type: 'document',
-    title: 'creator',
+    title: 'opportunity',
     fields: [
         defineField({
           name: 'name',
@@ -17,19 +17,14 @@ export default defineType({
             type: 'string',
           }),
           defineField({
-            name: 'body',
-            title: 'Body',
-            type: 'text',
-          }),
-          defineField({
             name: 'publishedAt',
-            title: 'Published At',
+            title: 'Opportunity Date',
             type: 'datetime',
           }),
           defineField({
-            name: 'author',
-            title: 'Author',
-            type: 'string',
-          })
+            name: 'Link',
+            title: 'opportunityurl',
+            type: 'url',
+          }),
     ]
 })

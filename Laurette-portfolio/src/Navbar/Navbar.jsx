@@ -102,7 +102,7 @@ const Navbar = () => {
             </LinkScroll>
 
             <p className="font-thin cursor-pointer hover:border-b-2  h-[35px] p-[5px]">
-              CREATIVE HUB
+              OPPORTUNITIES
             </p>
               <Link to='publication'>
               <p className="font-thin cursor-pointer hover:border-b-2  h-[35px] p-[5px]">
@@ -205,18 +205,17 @@ const Navbar = () => {
               </Link>
             </div>
           </div>
-          <p
-            onClick={handleItem}
-            className="font-thin cursor-pointer hover:border-b-2 "
-          >
-            GALLERY
-          </p>
+          <Link to='publication'>
+              <p onClick={handleItem} className="font-thin cursor-pointer hover:border-b-2  h-[35px] p-[5px]">
+              PUBLICATIONS
+            </p>
+              </Link>
 
           <p
             onClick={handleItem}
             className="font-thin cursor-pointer hover:border-b-2"
           >
-            CREATIVE HUB
+            OPPORTUNTIES
           </p>
         </div>
       </div>

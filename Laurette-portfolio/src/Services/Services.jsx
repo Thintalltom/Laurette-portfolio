@@ -10,7 +10,7 @@ const Services = () => {
       <p className="text-center text-zinc-400 mt-4">
         I offer the following services :{" "}
       </p>
-      <div className=" mt-[30px] cursor-pointer md:flex-col sm:flex-col xs:flex-col lg:flex-row xxl:flex-row flex justify-center items-center gap-[50px] mt-[20px]">
+      <div className=" p-[20px] mt-[30px] cursor-pointer md:flex-col sm:flex-col xs:flex-col lg:flex-row xxl:flex-row flex justify-center items-center gap-[50px] mt-[20px]">
         <div className="  bg-zinc-950 w-[300px] h-[450px]">
           <img
             className="brightness-50 h-[200px]"

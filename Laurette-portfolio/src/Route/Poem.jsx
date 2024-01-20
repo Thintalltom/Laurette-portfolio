@@ -22,7 +22,7 @@ useEffect(() => {
   return (
     <div>
       <div>
-      {loading && <div className='flex justify-center items-center h-[100vh] text-white'> <p>Loading...</p> </div>}
+      {loading && <div className='flex justify-center items-center h-[100vh] text-black'> <p>Loading...</p> </div>}
       {!loading &&
         poem && poem.map((poem, index) => (
         <div key={index} className='gap-4 p-4 text-black'>
