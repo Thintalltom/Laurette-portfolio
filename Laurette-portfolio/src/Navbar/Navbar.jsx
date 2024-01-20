@@ -29,7 +29,8 @@ const Navbar = () => {
         <div className="flex  h-[40px] justify-between p-4">
           <Link to="/">
             {" "}
-            <p className="font-extralight text-4xl">eth.Aina</p>{" "}
+            <p className="font-extralight text-4xl">eth.aina</p>{" "}
+         
           </Link>
           <div className="flex flex-row gap-[20px]">
             <LinkScroll to="about" smooth={true} duration={1000}>
@@ -103,6 +104,12 @@ const Navbar = () => {
             <p className="font-thin cursor-pointer hover:border-b-2  h-[35px] p-[5px]">
               CREATIVE HUB
             </p>
+              <Link to='publication'>
+              <p className="font-thin cursor-pointer hover:border-b-2  h-[35px] p-[5px]">
+              PUBLICATIONS
+            </p>
+              </Link>
+            
 
             <LinkScroll to="service" smooth={true} duration={1000}>
               {" "}

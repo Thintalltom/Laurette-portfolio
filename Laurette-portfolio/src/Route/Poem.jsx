@@ -22,10 +22,10 @@ useEffect(() => {
   return (
     <div>
       <div>
-      {loading && <div className='flex justify-center items-center h-[100vh]'> <p>Loading...</p> </div>}
+      {loading && <div className='flex justify-center items-center h-[100vh] text-white'> <p>Loading...</p> </div>}
       {!loading &&
         poem && poem.map((poem, index) => (
-        <div key={index} className='gap-4 p-4 text-white'>
+        <div key={index} className='gap-4 p-4 text-black'>
           <p className='font-light'> Title: {poem.name}</p>
           <p className='font-light'> Author: {poem.author}</p>
           <p className='font-light'>Description: {poem.Description}</p>

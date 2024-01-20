@@ -79,22 +79,25 @@ const Contact = () => {
         Connect with me on <a>Amazon.com</a>
       </p>
       <div className="flex justify-center mt-4 items-center gap-[30px]">
-        <a className="text-5xl cursor-pointer">
+        <a className="text-5xl cursor-pointer" href="https://twitter.com/ETH_Aaina"  target="_blank" rel="noopener noreferrer">
           <FaTwitterSquare />
         </a>
-        <a className="text-5xl cursor-pointer">
+        <a className="text-5xl cursor-pointer" href="https://www.facebook.com/officialeth.aina?mibextid=9R9pXO" target="_blank" rel="noopener noreferrer">
           <FaFacebookF />
         </a>
         <a
           className="text-5xl cursor-pointer"
           href="https://www.linkedin.com/in/aina-temitope-emmanuel-eth-aina-7190a720b/"
+          target="_blank" rel="noopener noreferrer"
         >
           <FaLinkedinIn />
         </a>
-        <a className="text-5xl cursor-pointer">
+        <a className="text-5xl cursor-pointer" href="https://instagram.com/eth.aina?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr"  target="_blank" rel="noopener noreferrer">
           <FaInstagram />
         </a>
       </div>
+      <a href="https://twitter.com/tomideofGod" className="text-center mt-[20px] font-extralight" target="_blank" rel="noopener noreferrer" > <p className="text-center mt-[20px]">developed by @tofG</p></a>
+     
     </div>
   );
 };

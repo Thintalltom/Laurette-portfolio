@@ -2,34 +2,20 @@
 import {defineField, defineType} from 'sanity'
 
 export default defineType({
-    name: 'opportunities',
+    name: 'publications',
     type: 'document',
-    title: 'opportunities',
+    title: 'publications',
     fields: [
         defineField({
-          name: 'name',
-          title: 'Name',
+          name: 'Title',
+          title: 'title',
           type: 'string',
         }),
-        defineField({
-            name: 'Description',
-            title: 'description',
-            type: 'string',
-          }),
           defineField({
-            name: 'body',
-            title: 'Body',
-            type: 'text',
+            name: 'Publication Url',
+            title: 'publicationurl',
+            type: 'url',
           }),
-          defineField({
-            name: 'publishedAt',
-            title: 'Published At',
-            type: 'datetime',
-          }),
-          defineField({
-            name: 'author',
-            title: 'Author',
-            type: 'string',
-          })
+        
     ]
 })

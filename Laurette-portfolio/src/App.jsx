@@ -8,6 +8,7 @@ import Fiction from "./Route/Fiction";
 import Opportunity from "./Route/Opportunity";
 import Nonfiction from "./Route/Nonfiction";
 import Poem from "./Route/Poem";
+import Publications from "./Route/Publications";
 import "./App.css";
 
 function App() {
@@ -43,6 +44,7 @@ function App() {
               <Route path="/nonfiction" element={<Nonfiction />} />
               <Route path="/opportunity" element={<Opportunity />} />
               <Route path="/poem" element={<Poem />} />
+              <Route path="/publication" element= {<Publications />} />
             </Routes>
           </div>
         )}
