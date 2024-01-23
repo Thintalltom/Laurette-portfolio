@@ -21,7 +21,7 @@ const Home = () => {
              className="lg:text-9xl longText xs:text-[50px] xs:font-bold md:text-lg sm:text-7xl md:text-3xl  lg:font-extralight">
               eth.aina
             </motion.p>
-            <p>Ghostwriter || Poet || Storyteller || Publisher</p>
+            <p className="xs:text-sm">Ghostwriter || Poet || Storyteller || Publisher</p>
             <a href="mailto:ethaina101@gmail.com">
             <button className=" p-[20px] mt-[80px] xs:w-[200px] lg:w-[300px] text-zinc-950 text-[20px] mx-auto bg-white shadow">
          Hire Me
