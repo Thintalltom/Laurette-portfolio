@@ -129,7 +129,7 @@ const Navbar = () => {
           <Link to="/">
             {" "}
             <p className="text-white text-2xl font-extralight z-10">
-              eth.Aina
+              eth.aina
             </p>{" "}
           </Link>
           <div onClick={handleClick} className="z-10">

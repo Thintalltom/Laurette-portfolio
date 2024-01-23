@@ -1,4 +1,7 @@
 import React from "react";
+import consulting from '../assets/consulting.jpeg'
+import printing from '../assets/printing.jpeg'
+import proofreading from '../assets/proofreading.jpeg'
 import "./Services.css";
 const Services = () => {
   return (
@@ -17,7 +20,7 @@ const Services = () => {
             src="https://plus.unsplash.com/premium_photo-1664298417425-16dfa061fdaa?w=300&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YmxhY2slMjBtYW4lMjB3cml0aW5nfGVufDB8fDB8fHww"
           />
           <p className="text-center text-zinc-300 mt-[10px] font-bold text-lg">
-            Ghost writing
+            Ghostwriting
           </p>
           <p className="text-zinc-300 font-light mt-[5px] p-4 text-center text-xs leading-loose">
           My ghostwriting service is arranged to bring your story 
@@ -29,7 +32,7 @@ const Services = () => {
         <div className="bg-zinc-950 w-[300px] h-[450px]">
           <img
             className="brightness-50 h-[200px]"
-            src="https://images.unsplash.com/photo-1511161576033-13276ce03881?w=300&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGJsYWNrJTIwbWFuJTIwcmVhZGluZ3xlbnwwfHwwfHx8MA%3D%3D"
+            src={proofreading}
           />
           <p className="text-center text-zinc-300 font-bold mt-4">
             Proofreading/Editing
@@ -45,7 +48,7 @@ const Services = () => {
         <div className="bg-zinc-950 w-[300px] h-[450px]">
           <img
             className="brightness-50 "
-            src="https://images.unsplash.com/photo-1494883759339-0b042055a4ee?w=300&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmxhY2slMjBtYW4lMjBlZGl0aW5nJTIwYm9va3xlbnwwfHwwfHx8MA%3D%3D"
+            src={printing}
           />
           <p className="text-center text-zinc-300 font-bold mt-4">Publishing</p>
           <p className="p-4 text-zinc-300 font-light text-center text-xs leading-loose">
@@ -58,7 +61,7 @@ const Services = () => {
         <div className="bg-zinc-950 w-[300px] h-[450px]">
           <img
             className="brightness-50"
-            src="https://images.unsplash.com/photo-1417733403748-83bbc7c05140?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGJsYWNrJTIwbWFuJTIwY29uc3VsdGluZyUyMHNlcnZpY2V8ZW58MHx8MHx8fDA%3D"
+            src={consulting}
           />
           <p className="text-center text-zinc-300 font-bold mt-4">
             Coaching and Consulting Services
