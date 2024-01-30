@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Navbar from "./Navbar/Navbar";
 import Home from "./Home/Home";
 import PropagateLoader from "react-spinners/PropagateLoader";
-import { Routes, Route, Redirect } from "react-router-dom";
+import { Routes, Route} from "react-router-dom";
 import Essay from "./Route/Essay";
 import Fiction from "./Route/Fiction";
 import Opportunity from "./Route/Opportunity";
@@ -45,7 +45,7 @@ function App() {
               <Route path="/opportunity" element={<Opportunity />} />
               <Route path="/poem" element={<Poem />} />
               <Route path="/publication" element= {<Publications />} />
-              <Redirect to='/' />
+           
             </Routes>
           </div>
         )}
