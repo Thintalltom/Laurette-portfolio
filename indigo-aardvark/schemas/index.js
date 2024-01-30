@@ -8,4 +8,4 @@ import poem from './poem'
 import drama from './drama'
 
 // the schema will be added here so it can be displayed 
-export const schemaTypes = [drama, creator, nonfiction, fiction, poem, essay, opportunities]
+export const schemaTypes = [ creator, nonfiction, fiction, poem, essay, opportunities]

@@ -29,7 +29,7 @@ const Contact = () => {
     }
 
     setLoading(true);
-    emailjs.sendForm('service_ahp1dwa', 'template_7c21dti', form.current, '8_4ytZKJBDi0KjM6c')
+    emailjs.sendForm('service_ahp1dwa', 'template_z4466s9', form.current, '8_4ytZKJBDi0KjM6c')
     .then((result) => {
           console.log(result.text);
           setUser(result)
@@ -96,7 +96,7 @@ const Contact = () => {
           <FaInstagram />
         </a>
       </div>
-      <a href="https://twitter.com/tomideofGod" className="text-center mt-[20px] font-extralight" target="_blank" rel="noopener noreferrer" > <p className="text-center mt-[20px]">developed by @tofG</p></a>
+      <a href="https://twitter.com/tomideofGod" className="text-center mt-[20px] font-extralight" target="_blank" rel="noopener noreferrer" > <p className="text-center mt-[20px]">developed by @tomideofGod</p></a>
      
     </div>
   );
