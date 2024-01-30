@@ -207,6 +207,14 @@ const Navbar = () => {
               </Link>
             </div>
           </div>
+          <LinkScroll to="work" smooth={true} duration={1000}>
+          <p
+            onClick={handleItem}
+            className="font-thin cursor-pointer hover:border-b-2"
+          >
+           Works
+          </p>
+            </LinkScroll>
           <Link to='publication'>
               <p onClick={handleItem} className="font-thin cursor-pointer hover:border-b-2  h-[35px]">
               PUBLICATIONS

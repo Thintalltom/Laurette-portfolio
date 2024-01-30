@@ -1,11 +1,11 @@
 import React from "react";
 import './About.css'
-import aina from '../assets/aina.jpg'
+import front from '../assets/front.jpeg'
 const About = () => {
   return (
     <div name="about">
       <div className=" p-4 bgZinc  ">
-        <div className="flex lg:flex-row sm:flex-col xs:flex-col md:flex-col">
+        <div className="flex lg:flex-row  xs:mt-[-60px] sm:flex-col xs:flex-col md:flex-col">
           <div className="text-sm leading-loose  p-[5px]  gap-4">
             <p className=''>
               Hi. My name is Aina  Temitope Emmanuel. I am a wordsmith. My pseudonym
@@ -63,7 +63,7 @@ const About = () => {
             <p className="mt-[20px] italic "> Nice meeting you.</p>
           </div>
           <div className=" lg:w-[100rem]   xs:w-[90vw] flex items-center">
-            <img src={aina} className="w-[500px] h-[500px]" />
+            <img src={front} className="w-[500px] h-[500px]" />
           </div>
         </div>
       </div>

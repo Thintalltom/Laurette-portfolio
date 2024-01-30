@@ -6,11 +6,12 @@ const Nonfiction = () => {
   useEffect(() => {
     sanityClient
       .fetch(
-        `*[_type == 'nonfiction'] {body, Description, publishedAt, name, author, 'image': image.asset->url, 'fileUrl': file.asset->url}`
+        `*[_type == 'nonfiction'] { _id, body, Description, publishedAt, name, author, 'image': image.asset->url, 'fileUrl': file.asset->url}`
       )
       .then((data) => {
         setNonFiction(data);
         setLoading(false); // Set loading to false once data is fetched
+        console.log(data)
       })
       .catch(console.error);
   }, []);
