@@ -20,7 +20,6 @@ const Essaydetails = () => {
           }`)
             .then((data) => {
                 setEssay(data);
-                console.log(data);
                 setLoading(false); // Set loading to false once data is fetched
             })
             .catch(console.error);
