@@ -2,6 +2,8 @@ import React from "react";
 import "./Works.css";
 import book1 from "../assets/book1.png";
 import book2 from "../assets/book2.png";
+import heart from "../assets/heart.jpeg";
+import obinze from "../assets/obinze.jpeg";
 const Works = () => {
   return (
     <div className="lg:mt-[20px] xs:mt-[0px] bgZinc" name="work">
@@ -21,8 +23,14 @@ const Works = () => {
           <p className="text-sm text-center font-extralight mt-[10px]">Everything That Makes Me cry</p>
         </div>
         </a> 
-        <div className="w-[200px] h-[300px] bg-zinc-300"></div>
-        <div className="w-[200px] h-[300px] bg-zinc-300"></div>
+        <div className="w-[200px] h-[300px] bg-zinc-300">
+        <img src={heart} className='h-[300px]' />
+          <p className="text-sm text-center font-extralight mt-[10px]">Heart to Heart</p>
+        </div>
+        <div className="w-[200px] h-[300px] bg-zinc-300">
+        <img src={obinze} className='h-[300px]' />
+          <p className="text-sm text-center font-extralight mt-[10px]">Obinze The Fearless Boy</p>
+        </div>
       </div>
     </div>
   );

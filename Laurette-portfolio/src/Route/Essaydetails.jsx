@@ -41,7 +41,7 @@ const Essaydetails = () => {
             <div className='p-4 mt-4 '>
                 <p className='text-center text-2xl font-bold'>{essay.name}</p>
                 <div className='flex justify-center items-center bg-white h-[20rem]'>
-                <img src={essay.image} className='w-[300px]' />
+                <img src={essay.image} className='w-[200px]' />
                 </div>
                <p>{essay.body}</p>
                <p className='mt-4 text-xs'>Author: {essay.author}</p>
