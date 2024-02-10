@@ -29,7 +29,7 @@ const Contact = () => {
     }
 
     setLoading(true);
-    emailjs.sendForm('service_ahp1dwa', 'template_z4466s9', form.current, '8_4ytZKJBDi0KjM6c')
+    emailjs.sendForm('service_9ae17pt', 'template_tkjphhs', form.current, 'bM8LndDJaoT5wdoGN')
     .then((result) => {
           console.log(result.text);
           setUser(result)
