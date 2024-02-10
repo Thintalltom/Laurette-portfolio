@@ -1,13 +1,14 @@
 import React,{useState, useEffect} from 'react'
 import sanityClient from '../client'
 import '../Works/Works.css'
+import { Link } from 'react-router-dom'
 const Fiction = () => {
 
   const [fiction, setFiction] = useState(null)
   const [loading, setLoading] = useState(true);
   useEffect(() => {
  
-    sanityClient.fetch(`*[_type == 'fiction'] {body, Description, publishedAt, name, author, 'image': image.asset->url, 'fileUrl': file.asset->url}`)  .then((data) => {
+    sanityClient.fetch(`*[_type == 'fiction'] {_id, body, Description, publishedAt, name, author, 'image': image.asset->url, 'fileUrl': file.asset->url}`)  .then((data) => {
       setFiction(data);
       setLoading(false); // Set loading to false once data is fetched
     }).catch(console.error)
@@ -30,11 +31,11 @@ const Fiction = () => {
             <img src={fiction.image} className='min-w-[50px] max-h-[200px]' alt={`Cover for ${fiction.name}`} />
             <p> Author: {fiction.author}</p>
             <p> Title:  {fiction.name}</p>
-            <button className='bg-zinc-950 p-[10px] rounded-[5px] border-[0.5px]'>
-              <a href={fiction.fileUrl} target="_blank" rel="noopener noreferrer" download className='cursor-pointer text-white'>
-                Download File
-              </a>
+            <Link to={`/fictiondetails/${fiction._id}`}>
+            <button className=' text-white bg-zinc-950 p-[10px] rounded-[5px] border-[0.5px]'>
+                Read More
             </button>
+            </Link>
             <p> Date of publication: {formatDate(fiction.publishedAt)}</p>
           </div>
         </div>

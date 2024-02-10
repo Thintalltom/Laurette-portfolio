@@ -11,6 +11,8 @@ import Poem from "./Route/Poem";
 import Publications from "./Route/Publications";
 import Essaydetails from "./Route/Essaydetails";
 import Poemdetails from "./Route/PoemDetails";
+import FictionDetails from "./Route/FictionDetails";
+import NonfictionDetails from "./Route/NonfictionDetail";
 import "./App.css";
 
 function App() {
@@ -49,6 +51,8 @@ function App() {
               <Route path="/publication" element= {<Publications />} />
               <Route path='/detail/:id' element= {<Essaydetails/>} />
               <Route path='/details/:id' element= {<Poemdetails/>} />
+              <Route path='/fictiondetails/:id' element= {<FictionDetails/>} />
+              <Route path='/nonfictiondetails/:id' element= {<NonfictionDetails/>} />
             </Routes>
           </div>
         )}
