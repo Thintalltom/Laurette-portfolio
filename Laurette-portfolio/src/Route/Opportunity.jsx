@@ -12,18 +12,24 @@ const Opportunity = () => {
      },[]) 
     return (
     <div className='p-[20px]'>
-      <p>Opportunity</p>
+  
       {loading && <div className='flex justify-center items-center h-[100vh] text-black font-light'> <p>Loading...</p> </div>}
-        {!loading && opportunity  && 
-        opportunity.map((opportunity, index) => (
-        <div key={index} className='gap-4 p-4 text-black'>
-        
-            <p className='font-light'><a className='underline' href={opportunity.Link}> {opportunity.name}</a></p>
-            <p className='font-light'>{opportunity.Description}</p>
-        </div>
-      ))} 
-    </div>
-  )
-}
+        {!loading
+        && (
+          <div>
+            {!opportunity || opportunity.length === 0 ? (
+              <div className='text-red-500'>No content yet </div>
+            ) : ( 
+              opportunity.map((opportunity, index) => (
+                <div key={index} className='gap-4 p-4 text-black'>
+                
+                    <p className='font-light'><a className='underline' href={opportunity.Link}> {opportunity.name}</a></p>
+                    <p className='font-light'>{opportunity.Description}</p>
+                </div>
+            )))}
+            </div>
+  )}
+  </div>
+    )}
 
 export default Opportunity

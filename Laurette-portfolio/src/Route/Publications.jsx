@@ -13,21 +13,25 @@ const Publications = () => {
     
   return (
     <div className='h-full mt-[20px] p-[10px]'>
-        <p className='text-black text-2xl font-light'>Latest Publications</p>
-        <div>
+        
         {loading && <div className='flex justify-center items-center h-[100vh] text-black font-light'> <p>Loading...</p> </div>}
-        {!loading && publication && 
-        publication.map((publication, index) => (
-        <div key={index} className='gap-4 p-4 text-black'>
-        
-            <p className='font-light'><a className='underline' href={publication.Link}> {publication.Title}</a> |{publication.Publisher}</p>
+        {!loading && (
+          <div>
+          {!publication || publication.length === 0 ? (
+            <div className='text-red-500'>No content yet </div>
+          ) : ( 
+            publication.map((publication, index) => (
+              <div key={index} className='gap-4 p-4 text-black'>
+              
+                  <p className='font-light'><a className='underline' href={publication.Link}> {publication.Title}</a> |{publication.Publisher}</p>
+              </div>
+            )))} 
+      
+       
         </div>
-      ))} 
-        </div>
-        
+        )}  
         
     </div>
-  )
-}
+  )}
 
 export default Publications

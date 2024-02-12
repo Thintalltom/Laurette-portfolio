@@ -17,35 +17,37 @@ const Essay = () => {
       return new Date(dateString).toLocaleDateString(undefined, options);
     };
 
-  return (
-    <div className='p-4'>
-      <p className='text-center'>My latest Essay</p>
-        {loading && (
-        <div className="flex justify-center items-center h-[100vh]">
-          {" "}
-          <p>Loading...</p>{" "}
-        </div>
-      )}
+    return (
+      <div>
+        {loading && <div className='flex justify-center items-center h-[100vh]'> <p>Loading...</p> </div>}
+        {!loading && (
       <div className="grid place-items-center lg:grid-cols-3 p-[40px] xs:grid-cols-1 justify-center lg:h-full xs:h-full gap-[30px] mt-[20px]">
-     {!loading &&
-          essay &&
-          essay.map((essay, index) => (
-      <div key={index} className='border-[0.5px] shadow-md xs:w-[250px] text-black h-[350px] flex flex-col items-center rounded sm:w-[200px] lg:w-[250px]'>
-        <img src={essay.image} className='min-w-[100px] max-h-[200px]' alt={`Cover for ${essay.name}`} />
-       <p>  {essay.author}</p>
-       <p>{essay.name}</p>
-       <p>{essay.Description}</p>
-       <Link to={`/detail/${essay._id}`}>
-          <button className="bg-zinc-900 text-white  xxs:w-[200px] h-[50px] rounded-[10px] text-sm  hover:shadow-md shadow-sm  xs:w-[100px] lg:w-[120px] p-[2px] mt-4 ">
-            View details
-          </button>
-        </Link>
-      </div>
-     ))}
-
-      </div>
+      
+      {!essay || essay.length === 0 ? (
+          <div className='text-red-500'>No content yet</div>
+        ) : (
+        essay.map((fiction, index) => (
+          <div className='border-[0.5px] shadow-md xs:w-[250px] text-black h-[350px] rounded sm:w-[200px] lg:w-[250px]' key={index}>
+            <div key={fiction.author} className='gap-[5px] p-4 text-[10px] flex justify-center items-center flex-col'>
+              <img src={fiction.image} className='min-w-[50px] max-h-[200px]' alt={`Cover for ${fiction.name}`} />
+              <p> Author: {fiction.author}</p>
+              <p> Title:  {fiction.name}</p>
+              <Link to={`/detail/${fiction._id}`}>
+              <button className=' text-white bg-zinc-950 p-[10px] rounded-[5px] border-[0.5px]'>
+                  Read More
+              </button>
+              </Link>
+              <p> Date of publication: {formatDate(fiction.publishedAt)}</p>
+            </div>
+          </div>
+        )
+        ))}
     </div>
-  )
-}
-
+  )}
+  
+    
+          
+      </div>
+    )
+  }
 export default Essay

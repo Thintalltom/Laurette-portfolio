@@ -11,6 +11,7 @@ const Fiction = () => {
     sanityClient.fetch(`*[_type == 'fiction'] {_id, body, Description, publishedAt, name, author, 'image': image.asset->url, 'fileUrl': file.asset->url}`)  .then((data) => {
       setFiction(data);
       setLoading(false); // Set loading to false once data is fetched
+      console.log(fiction)
     }).catch(console.error)
    },[]) 
 
@@ -24,7 +25,10 @@ const Fiction = () => {
       {loading && <div className='flex justify-center items-center h-[100vh]'> <p>Loading...</p> </div>}
       {!loading && (
     <div className="grid place-items-center lg:grid-cols-3 p-[40px] xs:grid-cols-1 justify-center lg:h-full xs:h-full gap-[30px] mt-[20px]">
-    {fiction &&
+    
+    {!fiction || fiction.length === 0 ? (
+        <div className='text-red-500'>No content yet</div>
+      ) : (
       fiction.map((fiction, index) => (
         <div className='border-[0.5px] shadow-md xs:w-[250px] text-black h-[350px] rounded sm:w-[200px] lg:w-[250px]' key={index}>
           <div key={fiction.author} className='gap-[5px] p-4 text-[10px] flex justify-center items-center flex-col'>
@@ -39,6 +43,7 @@ const Fiction = () => {
             <p> Date of publication: {formatDate(fiction.publishedAt)}</p>
           </div>
         </div>
+      )
       ))}
   </div>
 )}

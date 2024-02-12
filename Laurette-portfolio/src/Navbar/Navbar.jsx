@@ -212,7 +212,7 @@ const Navbar = () => {
             onClick={handleItem}
             className="font-thin cursor-pointer hover:border-b-2"
           >
-           Works
+           WORKS
           </p>
             </LinkScroll>
           <Link to='publication'>
