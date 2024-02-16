@@ -48,8 +48,8 @@ const NonfictionDetails = () => {
                             <p key={index} className='mb-2 leading-7'>{paragraph}</p>
                         ))}
                     </div>
-               <p className='mt-4 text-xs'>Author: {fiction.author}</p>
-               <p  className='mt-4 text-xs'>Date of Publication: {formatDate(fiction.publishedAt)} </p>
+               <p className='mt-4 text-sm font-bold'>Author: {fiction.author}</p>
+               <p  className='mt-4 text-sm font-bold'>Date of Publication: {formatDate(fiction.publishedAt)} </p>
             </div>
         )}
     </div>
