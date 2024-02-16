@@ -47,8 +47,8 @@ return(
                             <p key={index} className='mb-2 leading-[35px] px-4 lg:px-40'>{paragraph}</p>
                         ))}
                     </div>
-               <p className='mt-4 text-xs'>Author: {essay.author}</p>
-               <p  className='mt-4 text-xs'>Date of Publication: {formatDate(essay.publishedAt)} </p>
+               <p className='mt-4 text-xs  px-4 lg:px-40'>Author: {essay.author}</p>
+               <p  className='mt-4 text-xs  px-4 lg:px-40'>Date of Publication: {formatDate(essay.publishedAt)} </p>
             </div>
         )}
     </div>

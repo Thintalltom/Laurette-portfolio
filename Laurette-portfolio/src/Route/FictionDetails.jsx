@@ -48,8 +48,8 @@ const FictionDetails = () => {
                             <p key={index} className='mb-2 leading-[35px] px-4 lg:px-40'>{paragraph}</p>
                         ))}
                     </div>
-               <p className='mt-4 text-xs'>Author: {fiction.author}</p>
-               <p  className='mt-4 text-xs'>Date of Publication: {formatDate(fiction.publishedAt)} </p>
+               <p className='mt-4 text-xs  px-4 lg:px-40'>Author: {fiction.author}</p>
+               <p  className='mt-4 text-xs  px-4 lg:px-40'>Date of Publication: {formatDate(fiction.publishedAt)} </p>
             </div>
         )}
     </div>
