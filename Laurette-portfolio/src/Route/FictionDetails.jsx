@@ -43,7 +43,11 @@ const FictionDetails = () => {
                 <div className='flex justify-center items-center bg-white h-[20rem]'>
                 <img src={fiction.image} className='w-[200px]' />
                 </div>
-               <p>{fiction.body}</p>
+                <div className='mt-4 text-sm'>
+                        {fiction.body.split('\n').map((paragraph, index) => (
+                            <p key={index} className='mb-2 leading-[35px] px-4 lg:px-40'>{paragraph}</p>
+                        ))}
+                    </div>
                <p className='mt-4 text-xs'>Author: {fiction.author}</p>
                <p  className='mt-4 text-xs'>Date of Publication: {formatDate(fiction.publishedAt)} </p>
             </div>

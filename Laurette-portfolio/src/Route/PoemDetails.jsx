@@ -42,7 +42,11 @@ return(
                 <div className='flex justify-center items-center bg-white h-[20rem]'>
                 <img src={essay.image} className='w-[200px]' />
                 </div>
-               <p>{essay.body}</p>
+                <div className='mt-4 text-sm'>
+                        {essay.body.split('\n').map((paragraph, index) => (
+                            <p key={index} className='mb-2 leading-[35px] px-4 lg:px-40'>{paragraph}</p>
+                        ))}
+                    </div>
                <p className='mt-4 text-xs'>Author: {essay.author}</p>
                <p  className='mt-4 text-xs'>Date of Publication: {formatDate(essay.publishedAt)} </p>
             </div>

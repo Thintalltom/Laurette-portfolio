@@ -21,7 +21,7 @@ const NonfictionDetails = () => {
           }`)
             .then((data) => {
                 setFiction(data);
-                console.log(data);
+               
                 setLoading(false); // Set loading to false once data is fetched
             })
             .catch(console.error);
@@ -45,11 +45,11 @@ const NonfictionDetails = () => {
                 </div>
                 <div className='mt-4 text-sm'>
                         {fiction.body.split('\n').map((paragraph, index) => (
-                            <p key={index} className='mb-2 leading-7'>{paragraph}</p>
+                            <p key={index}  className='mb-[20px] leading-[30px] px-4 lg:px-40'>{paragraph}</p>
                         ))}
                     </div>
-               <p className='mt-4 text-sm font-bold'>Author: {fiction.author}</p>
-               <p  className='mt-4 text-sm font-bold'>Date of Publication: {formatDate(fiction.publishedAt)} </p>
+               <p className='mt-4 text-sm '>Author: {fiction.author}</p>
+               <p  className='mt-4 text-sm '>Date of Publication: {formatDate(fiction.publishedAt)} </p>
             </div>
         )}
     </div>
