@@ -41,7 +41,10 @@ const Navbar = () => {
 
             <div className="flex flex-col relative">
               <div
-                onClick={handleOpen}
+                onClick={() => {
+                  handleItem();
+                  handleOpen(); // Close the dropdown when an item is clicked
+                }}
                 className=" flex gap-[5px] cursor-pointer font-thin cursor-pointer hover:border-b-2  h-[35px] p-[5px]"
               >
                 WRITING{" "}
@@ -54,11 +57,15 @@ const Navbar = () => {
                     ? " absolute bg-zinc-950 text-white border-[0.5px] z-10 h-[150px] mt-[50px]  rounded-[5px] "
                     : "hidden"
                 }
+               
               >
                 <Link to="/poem">
                   {" "}
                   <p
-                    onClick={handleThis}
+                    onClick={() => {
+                      handleItem();
+                      handleOpen(); // Close the dropdown when an item is clicked
+                    }}
                     className="cursor-pointer hover:bg-zinc-200 hover:text-zinc-950 w-[100px] p-[5px] "
                   >
                     Poetry
@@ -67,7 +74,10 @@ const Navbar = () => {
                 <Link to="/fiction">
                   {" "}
                   <p
-                    onClick={handleItem}
+                    onClick={() => {
+                      handleItem();
+                      handleOpen(); // Close the dropdown when an item is clicked
+                    }}
                     className="cursor-pointer hover:bg-zinc-200 hover:text-zinc-950 w-[100px] p-[5px] "
                   >
                     Fiction
@@ -76,7 +86,10 @@ const Navbar = () => {
                 <Link to="/nonfiction">
                   {" "}
                   <p
-                    onClick={handleItem}
+                    onClick={() => {
+                      handleItem();
+                      handleOpen(); // Close the dropdown when an item is clicked
+                    }}
                     className="cursor-pointer hover:bg-zinc-200 hover:text-zinc-950 w-[100px] p-[5px]"
                   >
                     Non-fiction
@@ -85,7 +98,10 @@ const Navbar = () => {
                 <Link to="/essay">
                   {" "}
                   <p
-                    onClick={handleItem}
+                    onClick={() => {
+                      handleItem();
+                      handleOpen(); // Close the dropdown when an item is clicked
+                    }}
                     className="cursor-pointer hover:bg-zinc-200 hover:text-zinc-950 w-[100px] p-[5px]"
                   >
                     Essay
@@ -142,9 +158,9 @@ const Navbar = () => {
         </div>
         <div
           className={
-            !open
-              ? "flex flex-col bgZinc w-full mt-[60px] z-[100]  text-white p-[20px] gap-[20px] absolute top-0 left-0"
-              : "hidden"
+            open
+              ? "hidden" 
+              : "flex flex-col bgZinc w-full mt-[60px] z-[100]  text-white p-[20px] gap-[20px] absolute top-0 left-0"
           }
         >
           <p
