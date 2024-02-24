@@ -150,17 +150,18 @@ const Navbar = () => {
           </Link>
           <div onClick={handleClick} className="z-10">
             {open ? (
-              <FiMenu className="text-white text-2xl" />
-            ) : (
               <FiX className="text-white text-2xl" />
+            ) : (
+              
+              <FiMenu className="text-white text-2xl" />
             )}
           </div>
         </div>
         <div
           className={
             open
-              ? "hidden" 
-              : "flex flex-col bgZinc w-full mt-[60px] z-[100]  text-white p-[20px] gap-[20px] absolute top-0 left-0"
+              ? "flex flex-col bgZinc w-full mt-[60px] z-[100]  text-white p-[20px] gap-[20px] absolute top-0 left-0"
+              : "hidden"
           }
         >
           <p
