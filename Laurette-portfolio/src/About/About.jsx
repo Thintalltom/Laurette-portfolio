@@ -6,7 +6,7 @@ const About = () => {
     <div name="about">
       <div className=" p-4 bgZinc  ">
         <div className="flex lg:flex-row  xs:mt-[-60px] sm:flex-col xs:flex-col md:flex-col">
-          <div className="text-sm leading-loose  p-[5px]  gap-4">
+          <div className="text-sm leading-loose text-justify  p-[5px]  gap-4">
             <p className=''>
               Hi. My name is Aina  Temitope Emmanuel. I am a wordsmith. My pseudonym
               is E.T.H...AINA. I studied  English at the University of Ibadan, Oyo
