@@ -48,7 +48,7 @@ const Nonfiction = () => {
                 >
                   <img
                     src={fiction.image}
-                    className="min-w-[50px] max-h-[200px]"
+                    className="min-w-[50px] h-[200px]"
                     alt={`Cover for ${fiction.name}`}
                   />
                   <p> Author: {fiction.author}</p>

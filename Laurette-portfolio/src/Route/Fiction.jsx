@@ -32,7 +32,7 @@ const Fiction = () => {
       fiction.map((fiction, index) => (
         <div className='border-[0.5px] shadow-md xs:w-[250px] text-black h-[350px] rounded sm:w-[200px] lg:w-[250px]' key={index}>
           <div key={fiction.author} className='gap-[5px] p-4 text-[10px] flex justify-center items-center flex-col'>
-            <img src={fiction.image} className='min-w-[50px] max-h-[200px]' alt={`Cover for ${fiction.name}`} />
+            <img src={fiction.image} className='min-w-[50px] h-[200px]' alt={`Cover for ${fiction.name}`} />
             <p> Author: {fiction.author}</p>
             <p> Title:  {fiction.name}</p>
             <Link to={`/fictiondetails/${fiction._id}`}>
