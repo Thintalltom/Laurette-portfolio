@@ -11,7 +11,7 @@ const Navbar = () => {
   };
 
   const handleItem = () => {
-    setOpen(true);
+    setOpen(!open);
   };
 
   const handleThis = () => {
@@ -42,7 +42,7 @@ const Navbar = () => {
             <div className="flex flex-col relative">
               <div
                 onClick={() => {
-                  handleItem();
+                 
                   handleOpen(); // Close the dropdown when an item is clicked
                 }}
                 className=" flex gap-[5px] cursor-pointer font-thin cursor-pointer hover:border-b-2  h-[35px] p-[5px]"
@@ -172,7 +172,9 @@ const Navbar = () => {
           </p>
           <div className="flex  flex-col">
             <div
-              onClick={handleOpen}
+                onClick={() => {
+                  handleOpen();// Close the dropdown when an item is clicked
+                }}
               className=" flex gap-[5px] cursor-pointer font-thin cursor-pointer hover:border-b-2  h-[35px] "
             >
               WRITING{" "}
@@ -189,7 +191,10 @@ const Navbar = () => {
               <Link to="/poem">
                 {" "}
                 <p
-                  onClick={handleItem}
+                   onClick={() => {
+                    handleItem();
+                    handleOpen(); // Close the dropdown when an item is clicked
+                  }}
                   className="cursor-pointer text-white w-[245px] p-[5px] "
                 >
                   Poetry
@@ -198,7 +203,10 @@ const Navbar = () => {
               <Link to="/fiction">
                 {" "}
                 <p
-                  onClick={handleItem}
+                    onClick={() => {
+                      handleItem();
+                      handleOpen(); // Close the dropdown when an item is clicked
+                    }}
                   className="cursor-pointer text-white w-[245px] p-[5px] "
                 >
                   Fiction
@@ -207,7 +215,10 @@ const Navbar = () => {
               <Link to="/nonfiction">
                 {" "}
                 <p
-                  onClick={handleItem}
+                   onClick={() => {
+                    handleItem();
+                    
+                  }}
                   className="cursor-pointer text-white w-[245px] p-[5px]"
                 >
                   Non-fiction
@@ -216,7 +227,10 @@ const Navbar = () => {
               <Link to="/essay">
                 {" "}
                 <p
-                  onClick={handleItem}
+                    onClick={() => {
+                      handleItem();
+                      handleOpen(); // Close the dropdown when an item is clicked
+                    }}
                   className="cursor-pointer text-white w-[245px] p-[5px]"
                 >
                   Essay

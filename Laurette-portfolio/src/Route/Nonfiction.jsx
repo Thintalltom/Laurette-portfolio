@@ -22,18 +22,7 @@ const Nonfiction = () => {
     return new Date(dateString).toLocaleDateString(undefined, options);
   };
 
-  const copyUrlToClipboard = () => {
-    const url = window.location.href;
 
-    navigator.clipboard
-      .writeText(url)
-      .then(() => {
-        alert("URL copied to clipboard!");
-      })
-      .catch((error) => {
-        console.error("Failed to copy:", error);
-      });
-  };
 
   return (
     <div>

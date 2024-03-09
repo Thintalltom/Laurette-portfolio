@@ -7,7 +7,7 @@ const FictionDetails = () => {
   const [fiction, setFiction] = useState(null);
   const [loading, setLoading] = useState(true);
   const { id } = useParams();
-  const [copy, setCopy] = useState(false)
+  const [copy, setCopy] = useState(false);
 
   useEffect(() => {
     sanityClient
@@ -61,20 +61,31 @@ const FictionDetails = () => {
           </div>
           <div className="mt-4 text-sm">
             {fiction.body.split("\n").map((paragraph, index) => (
-              <p key={index} className="mb-2 leading-[35px] px-4 lg:px-20">
+              <p key={index} className=" text-justify mb-2 leading-[35px] px-4 lg:px-20">
                 {paragraph}
               </p>
             ))}
           </div>
-          <button onClick={copyUrlToClipboard}>copy url</button>
           <p className="mt-4 text-xs  px-4 lg:px-20">
             Author: {fiction.author}
           </p>
-          <div className='mt-4 text-sm px-4 lg:px-20 flex  '>
-               
-               <button className=' text-sm w-[100px] h-[40px] rounded border-[1px] border-slate-400 flex justify-center items-center gap-[10px] ' onClick={copyUrlToClipboard}>{ copy ? <div className='flex justify-center items-center  gap-[5px]'>Copied <LuCopyCheck /></div> : <div className='flex justify-center items-center  gap-[5px]'> Copy Link  <IoCopyOutline /></div>}</button>
-              
+          <div className="mt-4 text-sm px-4 lg:px-20 flex  ">
+            <button
+              className=" text-sm w-[100px] h-[40px] rounded border-[1px] border-slate-400 flex justify-center items-center gap-[10px] "
+              onClick={copyUrlToClipboard}
+            >
+              {copy ? (
+                <div className="flex justify-center items-center  gap-[5px]">
+                  Copied <LuCopyCheck />
                 </div>
+              ) : (
+                <div className="flex justify-center items-center  gap-[5px]">
+                  {" "}
+                  Copy Link <IoCopyOutline />
+                </div>
+              )}
+            </button>
+          </div>
           <p className="mt-4 text-xs  px-4 lg:px-20">
             Date of Publication: {formatDate(fiction.publishedAt)}{" "}
           </p>
